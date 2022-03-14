@@ -9,7 +9,7 @@ Array.prototype.myMap = function(callbackFn)
         {
             continue;
         }
-        newArray[x] = callbackFn(this[x], x);
+        newArray[x] = callbackFn(this[x], x, this);
     }
     return newArray;
 };
